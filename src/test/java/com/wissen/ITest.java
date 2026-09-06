@@ -45,7 +45,7 @@ class ITest {
     void testAbcCalledExactlyTwice() {
         mockI.abc();
         mockI.abc();
-        //mockI.abc();
+        mockI.abc();
         
         verify(mockI, times(2)).abc();
     }
